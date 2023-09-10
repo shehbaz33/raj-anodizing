@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Link to Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Use "SF Mono" font for the entire body */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      /* Add custom CSS for background image and transparent navbar */
+      .hero {
+        background-image: url("6.jpg"); /* Replace 'your-background-image.jpg' with your image file */
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: black;
+      }
+
+      .bg2 {
+        background-image: url("bg4.jpg"); /* Replace 'your-background-image.jpg' with your image file */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .semi-transparent {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <title>Raj Anodizing Work</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-green-800">
+      <div class="container">
+        <a class="navbar-brand text-white" href="home.html">
+          Raj Anodizing Work
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Background Image
+    <section class="hero">
+      <div class="w-screen h-screen semi-transparent">
+        <div
+          class="container flex flex-col justify-center h-screen items-center"
+        >
+          <div>
+            <h1 class="font-bold text-white mb-4">
+              About Raj Anodizing Work<br />
+            </h1>
+            <p class="text-white">Quality Job Work of Anodizing & PU Coating</p>
+          </div>
+          <div>
+            <p class="text-white">
+              At Raj Anodizing Work, we take pride in our legacy of quality job
+              work in the field of anodizing and PU coating. With years of
+              experience and a commitment to excellence, we've earned the trust
+              of our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Hero Section with Background Image -->
+    <section class="hero">
+      <div class="w-screen h-screen semi-transparent">
+        <div
+          class="container flex flex-col justify-center h-screen items-center"
+        >
+          <div>
+            <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-4">
+              About Raj Anodizing Work<br />
+            </h1>
+            <p class="text-white text-base md:text-2xl">
+              Anodizing Works and Coating Solutions Tailored to Your Needs
+            </p>
+          </div>
+          <div>
+            <p class="text-white text-base md:text-xl">
+              At Raj Anodizing Work, we take pride in our legacy of quality job
+              work in the field of anodizing and PU coating. With years of
+              experience and a commitment to excellence, we've earned the trust
+              of our clients.
+            </p>
+          </div>
+          <!-- Add more content here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 bg-black body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
+            >
+              <h1
+                class="title-font sm:text-2xl text-xl font-medium text-green-800 mb-3"
+              >
+                Quality Craftsmanship
+              </h1>
+              <p class="leading-relaxed mb-3">
+                Our commitment to quality is at the core of everything we do. We
+                take pride in delivering precision finishing solutions that meet
+                the highest standards.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
+            >
+              <h1
+                class="title-font sm:text-2xl text-xl font-medium text-green-800 mb-3"
+              >
+                Full Compliance with Customer Requirements
+              </h1>
+              <p class="leading-relaxed mb-3">
+                We work closely with our customers to ensure that every project
+                is executed in full compliance with their unique requirements
+                and specifications.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
+            >
+              <h1
+                class="title-font sm:text-2xl text-xl font-medium text-green-800 mb-3"
+              >
+                Utmost Satisfaction
+              </h1>
+              <p class="leading-relaxed mb-3">
+                Your satisfaction is our top priority. We go the extra mile to
+                ensure that every project results in utmost satisfaction and
+                meets your expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="bg-gray-200 h-screen bg2">
+      <div
+        class="container semi-transparent mx-auto h-screen flex flex-col items-center justify-center"
+      >
+        <h2 class="text-3xl font-semibold text-center text-yellow-400">
+          Our Commitment
+        </h2>
+        <p class="text-sm md:text-lg text-center mt-4 w-full md:w-1/2">
+          At Raj Anodizing Work, our commitment to excellence runs deep. It's
+          not just a promise; it's a way of life. We are dedicated to setting
+          the industry standard for quality craftsmanship, precision, and
+          customer satisfaction. Our unwavering commitment to delivering the
+          best anodizing and coating solutions is the cornerstone of our
+          success. We approach each project with passion and dedication, leaving
+          no stone unturned to ensure that every finish is flawless. Our
+          commitment to innovation and sustainability drives us to continually
+          improve and adapt to the evolving needs of our clients and the
+          environment. When you choose Raj Anodizing Work, you choose a partner
+          who shares your commitment to excellence. We are here to turn your
+          vision into reality, and we do so with the utmost dedication and care.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
+      >
+        <!-- Logo on the right -->
+        <div class="text-center md:text-right">
+          <img src="./Raj Logo png.png" alt="Company Logo" class="h-40" />
+        </div>
+        <!-- Contact details on the left (stacked on mobile) -->
+        <div class="text-right md:text-left mb-3 md:mb-0">
+          <p class="text-xl font-semibold text-green-800">Contact Us</p>
+          <p class="text-sm md:text-base">
+            Telephone: +91-22-23071625 / +91-22-23073678
+          </p>
+          <p class="text-sm md:text-base">Fax: +91-22-2309269</p>
+          <p class="text-sm md:text-base">
+            Email:
+            <a href="mailto:anodize@mtnl.net.in" class="text-blue-300"
+              >anodize@mtnl.net.in</a
+            >
+          </p>
+          <p class="text-sm md:text-base">
+            Address 1: 42, 1st Floor, Municipal Industrial Estate, 372 Parshuram
+            Pupala Marg, Grant Road, Mumbai 400 008, India
+          </p>
+          <p class="text-sm md:text-base">
+            Address 2: Gala No. 17, Singh Industrial Estate No. 2, Ram Mandir
+            Road, Near Movie Star Theatre, Goregaon, Mumbai 400104, India
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link to Bootstrap and jQuery JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

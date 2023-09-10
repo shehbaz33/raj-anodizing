@@ -14,18 +14,18 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=SF+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <style>
       /* Use "SF Mono" font for the entire body */
       body {
-        font-family: "SF Mono", monospace;
+        font-family: "Poppins", sans-serif;
       }
       /* Add custom CSS for background image and transparent navbar */
       .hero {
-        background-image: url("bg6.jpg"); /* Replace 'your-background-image.jpg' with your image file */
+        background-image: url("anodizing1.png"); /* Replace 'your-background-image.jpg' with your image file */
         background-size: cover;
         height: 100vh;
         display: flex;
@@ -36,7 +36,7 @@
       }
 
       .bg2 {
-        background-image: url("bg4.jpg"); /* Replace 'your-background-image.jpg' with your image file */
+        background-image: url("bg3.png"); /* Replace 'your-background-image.jpg' with your image file */
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -52,8 +52,17 @@
         font-weight: bold;
       }
 
-      .hero p {
-        font-size: 1.5rem;
+      .semi-transparent {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      /* You can adjust the styles as needed */
+      .bg-cover {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+        color: white;
+        /* Additional styles for text color, padding, etc. */
       }
     </style>
     <title>Raj Anodizing Work</title>
@@ -62,7 +71,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-green-800">
       <div class="container">
-        <a class="navbar-brand text-white" href="#"> Raj Anodizing Work </a>
+        <a class="navbar-brand text-white" href="home.html">
+          Raj Anodizing Work
+        </a>
         <!-- Hamburger Menu Button -->
         <button
           class="navbar-toggler"
@@ -78,16 +89,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Services</a>
+              <a class="nav-link text-white" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -96,76 +107,92 @@
 
     <!-- Hero Section with Background Image -->
     <section class="hero">
-      <div class="container flex justify-center items-center">
-        <div class="w-1/2">
-          <img src="./Raj Logo png.png" alt="" srcset="" />
+      <div class="h-screen w-screen semi-transparent">
+        <div
+          class="container flex flex-col md:flex-row justify-center items-center"
+        >
+          <div class="w-1/2">
+            <img src="./Raj Logo png.png" alt="" srcset="" />
+          </div>
+          <div class="w-full md:w-1/2">
+            <p class="text-white text-base md:text-2xl">
+              Raj Anodizing Work is your trusted partner for delivering
+              exceptional quality anodizing and coating services. With a
+              steadfast commitment to setting the industry standard for
+              excellence, we take pride in providing precision finishing
+              solutions that are tailored to your unique needs.
+            </p>
+          </div>
         </div>
-        <div class="w-1/2">
-          <p class="text-black">
-            Raj Anodizing Work is your trusted partner for delivering
-            exceptional quality anodizing and coating services. With a steadfast
-            commitment to setting the industry standard for excellence, we take
-            pride in providing precision finishing solutions that are tailored
-            to your unique needs.
+      </div>
+    </section>
+
+    <section
+      class="text-gray-600 body-font bg-cover h-screen"
+      style="background-image: url('your-background-image.jpg')"
+    >
+      <div
+        class="container px-5 py-2 md:py-24 mx-auto flex flex-wrap justify-center items-center h-screen"
+      >
+        <h2
+          class="sm:text-3xl text-xl text-gray-900 font-medium title-font mb-2 text-green-800 md:w-2/5"
+        >
+          Our Mission at Raj Anodizing Work
+        </h2>
+        <div class="md:w-3/5 md:pl-6">
+          <p class="text-sm md:text-base">
+            At Raj Anodizing Work, our mission is deeply rooted in our
+            commitment to providing you with exceptional anodizing solutions
+            that go beyond the ordinary. We understand that each project is
+            unique, and that's why we tailor our services to meet your specific
+            requirements.
+          </p>
+          <p class="text-sm md:text-base">
+            Whether you need precision electro colour anodizing to enhance the
+            appearance and durability of your products, expert powder coating to
+            combine aesthetics with protection, or specialized PU coating for
+            superior resistance and longevity – you can trust our expertise.
+          </p>
+          <p class="text-sm md:text-base">
+            With years of industry experience, our dedicated team has honed
+            their skills to perfection. We are not just a service provider; we
+            are your committed partners in achieving the finest results. Our
+            unwavering commitment to quality, sustainability, and innovation
+            sets us apart.
           </p>
         </div>
-        <!-- Add more content here -->
       </div>
     </section>
 
-    <section class="h-screen bg-black text-white">
+    <section
+      class="text-gray-600 body-font bg-cover h-screen bg-white"
+      style="background-image: url('anodized-white.jpeg')"
+    >
       <div
-        class="container mx-auto h-screen flex flex-col items-center justify-center"
+        class="container semi-transparent px-5 py-2 md:py-24 mx-auto flex flex-wrap justify-center items-center h-screen"
       >
-        <h2 class="text-3xl font-semibold text-center text-green-800">
-          Our Mission
+        <div class="md:w-3/5 md:pl-6">
+          <p class="text-justify text-white text-sm md:text-base">
+            Explore our website to discover how we can add significant value to
+            your projects. Our commitment to excellence, quality, and innovation
+            means that your vision can come to life in ways that exceed your
+            expectations. Whether you're seeking electro colour anodizing,
+            powder coating, or PU coating, our team's expertise is at your
+            disposal. We thrive on projects of all scales, from small-scale
+            custom work to large industrial applications. Our transparent
+            communication and dedication to your success make us the ideal
+            partner for your surface finishing needs. When you choose Raj
+            Anodizing Work, you're choosing a partner who continually invests in
+            the latest technology, maintains eco-friendly practices, and strives
+            for continuous improvement. We take pride in our reputation for
+            delivering outstanding anodizing and coating solutions.
+          </p>
+        </div>
+        <h2
+          class="sm:text-3xl text-xl text-extrabold text-right font-medium title-font mb-2 text-yellow-400 md:w-2/5"
+        >
+          Explore Our Services at Raj Anodizing
         </h2>
-        <p class="text-lg text-center mt-4 w-1/2">
-          Our mission is to provide you with exceptional anodizing solutions
-          tailored to your unique requirements. Whether it's electro colour
-          anodizing, powder coating, or PU coating, our team of experts has the
-          knowledge and experience to deliver outstanding results. We take pride
-          in our unwavering commitment to quality, sustainability, and
-          innovation. Your satisfaction is our top priority, whether you have a
-          small-scale project or a large industrial application. With
-          transparent communication and a dedication to excellence, Raj
-          Anodizing Work is your trusted partner for achieving superior
-          anodizing and coating solutions. At Raj Anodizing Work, we continually
-          invest in cutting-edge technology to stay at the forefront of the
-          industry. Our eco-friendly practices minimize our environmental
-          impact, and our dedication to innovation ensures that we provide the
-          most advanced solutions available. When you choose us, you're choosing
-          a partner who is passionate about delivering results that make your
-          projects shine.
-        </p>
-      </div>
-    </section>
-
-    <!-- Third Section -->
-    <section class="bg-gray-200 h-screen bg2">
-      <div
-        class="container mx-auto h-screen flex flex-col items-center justify-center"
-      >
-        <h2 class="text-3xl font-semibold text-center text-green-800">
-          Explore Our Services
-        </h2>
-        <p class="text-lg text-center mt-4 w-1/2"">
-          Explore our website to discover how we can add significant value to
-          your projects. Our commitment to excellence, quality, and innovation
-          means that your vision can come to life in ways that exceed your
-          expectations. Whether you're seeking electro colour anodizing, powder
-          coating, or PU coating, our team's expertise is at your disposal. We
-          thrive on projects of all scales, from small-scale custom work to
-          large industrial applications. Our transparent communication and
-          dedication to your success make us the ideal partner for your surface
-          finishing needs. When you choose Raj Anodizing Work, you're choosing a
-          partner who continually invests in the latest technology, maintains
-          eco-friendly practices, and strives for continuous improvement. We
-          take pride in our reputation for delivering outstanding anodizing and
-          coating solutions. Your projects deserve the best, and that's
-          precisely what we're here to provide. Explore our website today and
-          let us be part of your journey to excellence.
-        </p>
       </div>
     </section>
 
@@ -181,19 +208,21 @@
         <!-- Contact details on the left (stacked on mobile) -->
         <div class="text-right md:text-left mb-3 md:mb-0">
           <p class="text-xl font-semibold text-green-800">Contact Us</p>
-          <p>Telephone: +91-22-23071625 / +91-22-23073678</p>
-          <p>Fax: +91-22-2309269</p>
-          <p>
+          <p class="text-sm md:text-base">
+            Telephone: +91-22-23071625 / +91-22-23073678
+          </p>
+          <p class="text-sm md:text-base">Fax: +91-22-2309269</p>
+          <p class="text-sm md:text-base">
             Email:
             <a href="mailto:anodize@mtnl.net.in" class="text-blue-300"
               >anodize@mtnl.net.in</a
             >
           </p>
-          <p>
+          <p class="text-sm md:text-base">
             Address 1: 42, 1st Floor, Municipal Industrial Estate, 372 Parshuram
             Pupala Marg, Grant Road, Mumbai 400 008, India
           </p>
-          <p>
+          <p class="text-sm md:text-base">
             Address 2: Gala No. 17, Singh Industrial Estate No. 2, Ram Mandir
             Road, Near Movie Star Theatre, Goregaon, Mumbai 400104, India
           </p>
