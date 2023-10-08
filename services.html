@@ -17,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Include Font Awesome CSS (you can find the latest link on the Font Awesome website) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <style>
       /* Use "SF Mono" font for the entire body */
@@ -49,6 +54,87 @@
 
       .semi-transparent {
         background-color: rgba(0, 0, 0, 0.5);
+      }
+      .slider-container {
+        position: relative;
+        width: 600px; /* Set the width of your slider container */
+        height: 400px; /* Set the height of your slider container */
+        overflow: hidden;
+        object-fit: cover;
+        padding: 0;
+      }
+
+      .slider {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        width: 100%;
+        flex: 0 0 auto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .prev-button,
+      .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .prev-button {
+        left: 0;
+      }
+
+      .next-button {
+        right: 0;
+      }
+
+      /* Media query for smaller screens */
+      @media (max-width: 600px) {
+        .slider-container {
+          max-width: 100%; /* Allow the slider to take the full width on smaller screens */
+          width: 300px;
+        }
+
+        .prev-button,
+        .next-button {
+          font-size: 18px; /* Adjust font size for smaller screens */
+          padding: 4px 10px;
+          background-color: #333; /* Add a background color */
+          color: white; /* Text color */
+          border: none;
+          cursor: pointer;
+          border-radius: 50%; /* Make the button round */
+          transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .prev-button:hover,
+        .next-button:hover {
+          background-color: #555; /* Change background color on hover */
+        }
+
+        /* Add styles for the icons */
+        .prev-button i,
+        .next-button i {
+          margin: 0; /* Remove default icon margin */
+        }
+        /* Adjust the height of the slider for smaller screens if needed */
+        .slider-container {
+          height: 200px; /* Set an appropriate height for smaller screens */
+        }
       }
     </style>
     <title>Raj Anodizing Work</title>
@@ -120,13 +206,46 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div class="p-4 md:w-full sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
+            <!-- <div class="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
                 class="object-contain object-center h-full w-full"
                 src="./electro-color-anodizing.webp"
               />
+            </div> -->
+            <div class="slider-container container mx-auto">
+              <div class="slider">
+                <div class="slide">
+                  <img src="./raj 7.webp" alt="Image 1" />
+                </div>
+                <div class="slide">
+                  <img src="./raj 2.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                  <img src="./raj 3.jpeg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                  <img src="./raj 4.webp" alt="Image 3" />
+                </div>
+                <div class="slide">
+                  <img src="./raj 5.jpg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                  <img src="./raj 6.jpg" alt="Image 3" />
+                </div>
+                <!-- Add more slides here -->
+              </div>
+              <button class="prev-button">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-button">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+
+              <!-- <button class="prev-button">Previous</button>
+              <button class="next-button">Next</button> -->
             </div>
+
             <h2
               class="text-xl md:text-2xl font-bold md:font-medium title-font text-green-800 mt-5"
             >

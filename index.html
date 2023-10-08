@@ -64,6 +64,11 @@
         color: white;
         /* Additional styles for text color, padding, etc. */
       }
+      @media (max-width: 600px) {
+        .hero {
+          background-position: bottom;
+        }
+      }
     </style>
     <title>Raj Anodizing Work</title>
   </head>
@@ -109,13 +114,13 @@
     <section class="hero">
       <div class="h-screen w-screen">
         <div
-          class="container flex flex-col md:flex-row justify-center items-center"
+          class="container flex h-screen flex-col md:flex-row justify-center items-start md:items-center"
         >
-          <div class="w-1/2">
-            <img src="./Raj Logo png.png" alt="" srcset="" />
+          <div class="md:w-1/2 w-2/3 pb-4 md:pb-0">
+            <img src="./Raj Website Logo.png" alt="" srcset="" />
           </div>
           <div class="w-full md:w-1/2">
-            <p class="text-white text-base md:text-xl">
+            <p class="md:text-white text-black text-base md:text-xl">
               Raj Anodizing Work is your trusted partner for delivering
               exceptional quality anodizing services. With a steadfast
               commitment to setting the industry standard for excellence, we

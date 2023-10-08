@@ -1,20 +1,30 @@
-$(".slider-for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: ".slider-nav",
-});
-$(".slider-nav").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: ".slider-for",
-  dots: true,
-  focusOnSelect: true,
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
+
+let currentIndex = 0;
+
+prevButton.addEventListener("click", () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+  updateSlider();
 });
 
-$("a[data-slide]").click(function (e) {
-  e.preventDefault();
-  var slideno = $(this).data("slide");
-  $(".slider-nav").slick("slickGoTo", slideno - 1);
+nextButton.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  updateSlider();
 });
+
+function updateSlider() {
+  const translateX = -currentIndex * 100 + "%";
+  slider.style.transform = `translateX(${translateX})`;
+}
+
+// Initial setup
+updateSlider();
